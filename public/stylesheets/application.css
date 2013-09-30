@@ -1,0 +1,63 @@
+h1 {
+  font-style: bold;
+  font-size: 130%;
+  text-align: center;
+}
+h2 {
+  font-style: bold;
+  font-size: 115%;
+  text-align: center;
+}
+h3 {
+  font-style: italic;
+  font-size: 100%;
+  text-align: center;
+}
+div#header {
+  font-style: italic;
+  font-size: small;
+  text-align: center;
+}
+div#notice {
+ border: 5px solid #ccc;
+ margin-top: 50px;
+ padding: 20px;
+ font-weight: bold;
+ color: green;
+}
+.red {
+ color: red;
+}
+.small {
+  font-size: small;
+}
+.center {
+  text-align: center;
+}
+.green {
+  color: green;
+}
+a.external:link {text-decoration: none; color: grey;}
+a.external:visited {text-decoration: none; color: grey;}
+a.external:active {text-decoration: none}
+a.external:hover {text-decoration: underline; color: red;}
+/*
+ul { margin: 0; padding: 0; }
+*/
+li {list-style: none;}
+dl,dt,dd {
+ padding:0;
+ margin:0;
+}
+dl {
+ width:100%;
+ overflow:hidden;
+}
+dt {
+ float:left;
+ width:10%; /* adjust the width; make sure the total of both is 100% */
+}
+dd {
+ float:left;
+ width:90%; /* adjust the width; make sure the total of both is 100% */
+}

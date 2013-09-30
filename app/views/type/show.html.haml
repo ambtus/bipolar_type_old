@@ -1,0 +1,4 @@
+- content_for(:title, "BipolarType: #{@type.name}")
+-@type.scales.each do |scale|
+  %h2=scale.full_name
+  %p=render scale.partial_name

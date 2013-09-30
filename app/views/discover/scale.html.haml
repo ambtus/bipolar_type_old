@@ -1,0 +1,9 @@
+=render "header"
+%p
+  I would rather&hellip;
+%p
+  %a{:href => discover_path(@answer.answer + "L")}<
+    =@answer.left_response
+%p
+  %a{:href => discover_path(@answer.answer + "R")}<
+    =@answer.right_response

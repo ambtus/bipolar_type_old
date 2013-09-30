@@ -1,0 +1,15 @@
+=render "header"
+%p
+  I have been taught that I will never be able to
+  =@response
+  unless I can
+  %a{:href => discover_path( @answer.answer + @answer.current.downcase)}<
+    =@hybrid_response
+  most of the time
+%p
+  I have learned the hard way that sometimes the only way to
+  =@response
+  is to
+  %a{:href => discover_path(@answer.answer + @answer.current)}<
+    =@pure_response
+  some of the time

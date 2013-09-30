@@ -1,0 +1,30 @@
+- content_for(:title, 'BipolarType')
+%p
+  Welcome to BipolarType.
+%p
+  BipolarType is a personality theory which can help you understand how you see the world, why you don't behave like everyone else, and what you can do to reduce the stress in your life.
+%p
+  The discovery process will ask you eight questions and then describe your BipolarType.
+%p
+  If you don't agree with the result, feel free to follow the links to a related BipolarType which fits you better.
+%p
+  %a{:href => discover_path("Q1")}<
+    Question #1
+%hr
+%p.small
+  Notes:
+%p.small
+  There are 256 possible BipolarTypes, although some are more probable than others. All BipolarTypes are equally adaptive; all have their own strengths and weaknesses.
+%p.small
+  I believe that this theory is
+  true and that it works, that it makes me happy and that it will help me follow my dreams.
+  It may or may not help you win, have the features that you need, prevent you from being ostracized or allow you to tell your story, but I hope that it will.
+%p.small
+  I am
+  =@type.name.article
+  =succeed "." do
+    =link_to @type.name, type_path(@type.symbol)
+  I have attempted to keep the language neutral, but it is inevitable that my own personal biases will have crept in.
+  If you have a suggestion for a word or phrase which better describes your BipolarType please let me know at
+  =succeed "." do
+    =link_to "Issues", "https://github.com/ambtus/bipolar_type/issues/new"
